@@ -95,26 +95,3 @@ footer {
     background-color: orange;
 }
 
-/* Lato Font Style  */
-.lato-light {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .lato-light-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-
-  /* Oswald Font Style */
-  // <uniquifier>: Use a unique and descriptive class name
-  // <weight>: Use a value from 200 to 700
-  
-  .oswald {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
