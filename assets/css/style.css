@@ -1,3 +1,6 @@
+/* Google fonts import link */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Oswald:wght@200..700&display=swap');
+
 /* Astrisk wildcard selector to override default styles added by browser*/
 * {
     padding: 0;
@@ -31,3 +34,27 @@ main {
 footer {
     background-color: orange;
 }
+
+/* Lato Font Style  */
+.lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  /* Oswald Font Style */
+  // <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 200 to 700
+  
+  .oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
