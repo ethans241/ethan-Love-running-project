@@ -17,54 +17,53 @@
 </head>
 
 <body>
-
     <!-- Header -->
     <header>
         <a href="index.html">
             <h1 id="logo">Love Running</h1>
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav>
             <ul id="menu">
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="gallary.html">Gallary</a></li>
-            <li><a href="signup.html" class="active">Sign Up</a></li>
-        </ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="signup.html" class="active">Sign Up</a></li>
+            </ul>
         </nav>
     </header>
-    
+
     <!-- Main content -->
     <main>
         <section id="signup">
-            <h2><i class="fa-solid fa-heart-pulse"></i> let's get you signed up!</h2>
-            <form action="https://formdump.codeinstitute.net" method="post" id="singup-form">
-                
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name" required class="text-input">
+            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h2><i class="fa-solid fa-heartbeat"></i> Let's get you signed up!</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
                 <br>
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name" required class="text-input">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last_name" id="last-name" class="text-input" required>
                 <br>
-                    <label for="email-address">Email Address</label>
-                    <input type="email" name="email-address" id="email-address" required class="text-input">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
                 <br>
-                    <div></div>
-                        <input type="radio" id="road" name="running_preference" value="road" required checked>
+                <div class="radio-buttons">
+                    <div>
                         <label for="road">Road</label>
+                        <input type="radio" name="running_preference" id="road" value="road" required checked>
                     </div>
                     <div>
-                        <input type="radio" id="trail" name="running_preference" value="trail" required checked>
                         <label for="trail">Trail</label>
+                        <input type="radio" name="running_preference" id="trail" value="trail" required>
                     </div>
                     <div>
-                        <input type="radio" id="both" name="running_preference" value="both" required checked>
                         <label for="both">Both</label>
+                        <input type="radio" name="running_preference" id="both" value="both" required>
                     </div>
                 </div>
-                <div>
-                    <input type="submit" name="" class="join-button" value="Let's Run">
-                </div>
+                <button type="submit" class="join-button">Let's Run!</button>
             </form>
         </section>
     </main>
@@ -72,11 +71,26 @@
     <!-- Footer -->
     <footer>
         <ul id="social-networks">
-            <li><a href="http://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (open in a new tab)"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="http://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (open in a new tab)"><i class="fa-brands fa-square-twitter"></i></a></li>
-            <li><a href="http://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our Youtube page (open in a new tab)"><i class="fa-brands fa-square-youtube"></i></a></li>
-            <li><a href="http://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our instagram page (open in a new tab)"><i class="fa-brands fa-instagram"></i></a></li>
-
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li>
         </ul>
     </footer>
 
